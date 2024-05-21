@@ -220,7 +220,7 @@
 
 	.soda-container {
 		width: auto;
-		height: 600px;
+		height: 430px;
 
 		display: flex;
 		justify-content: center;

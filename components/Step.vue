@@ -40,6 +40,13 @@
 		user-select: none; /* Standard syntax */
 	}
 
+	/* 响应式布局：当宽度小于或等于 375px 时，修改布局样式 */
+	@media (max-width: 375px) {
+		.step-item {
+			font-size: 20px;
+		}
+	}
+
 	.is-active {
 		color: black;
 		font-weight: bold;

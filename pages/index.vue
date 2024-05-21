@@ -30,14 +30,13 @@
 		background-color: #F8F8F8;
 		
 		min-width: 500px;
-		min-height: 600px;
+		min-height: 430px;
 
 		transform: translate3d(0, 0, 0);
 	}
 
 	/* 响应式布局：当宽度小于或等于 880px 时，修改布局 */
 	@media (max-width: 880px) {
-
 		.main-app {
 			overflow-x: hidden;
 		}
