@@ -1,5 +1,15 @@
 <script setup lang="ts">
 	const step = ref<StepId>(1);
+
+	useHead({
+		title: 'SODA Playground',
+		meta: [
+			{
+				name: 'description',
+				content: 'SODA Playground. This website shows you how to create a beautiful "SODA bar" by use HTML, CSS and JavaScript.'
+			}
+		]
+	})
 </script>
 <template>
   <div class="main-app">
