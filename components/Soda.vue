@@ -198,7 +198,9 @@
 					</div>
 				</div>
 			</Transition>
-			<div class="banner">By cfdxkk<a href="https://github.com/cfdxkk/SODA" target="_blank">Check Source Code</a>Origin image is from <a href="https://www.pixiv.net/users/10109777" target="_blank">@紺屋鴉江</a></div>
+			<div class="banner-box">
+				<div class="banner">By cfdxkk<a href="https://github.com/cfdxkk/SODA" target="_blank">Check Source Code</a>Origin image is from <a href="https://www.pixiv.net/users/10109777" target="_blank">@紺屋鴉江</a></div>
+			</div>
 		</div>
 </template>
 
@@ -206,8 +208,6 @@
 	.soda-display {
 		width: 100%;
 		height: 100%;
-
-		min-width: 500px;
 
 		display: flex;
 		justify-content: center;
@@ -392,11 +392,21 @@
 		to { top: 0; height: 100% }
 	}
 
-	.banner {
+	.banner-box {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 
+		width: 100%;
+		height: 25px;
+
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.banner {
 		width: 100%;
 		height: 25px;
 
@@ -405,6 +415,26 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	/* 响应式布局：当宽度小于或等于 880px 时，修改布局样式 */
+	@media (max-width: 880px) {
+		.banner-box {
+			height: 50px;
+		}
+
+		.banner {
+			width: 300px;
+			height: 50px;
+
+			color: rgb(162, 162, 162);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
 	}
 
 	.banner a {

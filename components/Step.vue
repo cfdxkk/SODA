@@ -29,11 +29,10 @@
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: center;
-		min-width: 380px;
 	}
 
 	.step-item {
-		margin: 2vh 30px 2vh 0;
+		margin: 1.9% 30px 1.9% 0;
 
 		font-size: 25px;
 		color: #9f949b;
